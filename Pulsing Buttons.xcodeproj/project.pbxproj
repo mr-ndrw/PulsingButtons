@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49007B7E1B3D6FC900A7BE06 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49007B7D1B3D6FC900A7BE06 /* UIColorExtensions.swift */; };
+		49007B801B3D711F00A7BE06 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49007B7F1B3D711F00A7BE06 /* CGRectExtensions.swift */; };
 		4908B3EF1B39EC9C0099F0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908B3EE1B39EC9C0099F0E8 /* AppDelegate.swift */; };
 		4908B3F11B39EC9C0099F0E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908B3F01B39EC9C0099F0E8 /* ViewController.swift */; };
 		4908B3F41B39EC9C0099F0E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4908B3F21B39EC9C0099F0E8 /* Main.storyboard */; };
 		4908B3F61B39EC9C0099F0E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4908B3F51B39EC9C0099F0E8 /* Images.xcassets */; };
 		4908B3F91B39EC9C0099F0E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4908B3F71B39EC9C0099F0E8 /* LaunchScreen.xib */; };
 		4908B4051B39EC9C0099F0E8 /* Pulsing_ButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908B4041B39EC9C0099F0E8 /* Pulsing_ButtonsTests.swift */; };
+		4908B4101B39EF580099F0E8 /* PulsingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908B40F1B39EF580099F0E8 /* PulsingButtonView.swift */; };
+		4908B4121B3B24300099F0E8 /* PulsingButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908B4111B3B24300099F0E8 /* PulsingButtonsViewController.swift */; };
+		4908B4141B3B25590099F0E8 /* PulsingButtonBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908B4131B3B25590099F0E8 /* PulsingButtonBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49007B7D1B3D6FC900A7BE06 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		49007B7F1B3D711F00A7BE06 /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 		4908B3E91B39EC9C0099F0E8 /* Pulsing Buttons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pulsing Buttons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4908B3ED1B39EC9C0099F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4908B3EE1B39EC9C0099F0E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +43,9 @@
 		4908B3FE1B39EC9C0099F0E8 /* Pulsing ButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pulsing ButtonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4908B4031B39EC9C0099F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4908B4041B39EC9C0099F0E8 /* Pulsing_ButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing_ButtonsTests.swift; sourceTree = "<group>"; };
+		4908B40F1B39EF580099F0E8 /* PulsingButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PulsingButtonView.swift; path = Views/PulsingButtonView.swift; sourceTree = "<group>"; };
+		4908B4111B3B24300099F0E8 /* PulsingButtonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsingButtonsViewController.swift; sourceTree = "<group>"; };
+		4908B4131B3B25590099F0E8 /* PulsingButtonBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PulsingButtonBoard.swift; path = Views/PulsingButtonBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49007B7C1B3D6F6E00A7BE06 /* Helper Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				49007B7D1B3D6FC900A7BE06 /* UIColorExtensions.swift */,
+				49007B7F1B3D711F00A7BE06 /* CGRectExtensions.swift */,
+			);
+			name = "Helper Libraries";
+			sourceTree = "<group>";
+		};
 		4908B3E01B39EC9C0099F0E8 = {
 			isa = PBXGroup;
 			children = (
+				49007B7C1B3D6F6E00A7BE06 /* Helper Libraries */,
 				4908B3EB1B39EC9C0099F0E8 /* Pulsing Buttons */,
 				4908B4011B39EC9C0099F0E8 /* Pulsing ButtonsTests */,
 				4908B3EA1B39EC9C0099F0E8 /* Products */,
@@ -77,12 +97,14 @@
 		4908B3EB1B39EC9C0099F0E8 /* Pulsing Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				4908B40E1B39ED540099F0E8 /* Views */,
 				4908B3EE1B39EC9C0099F0E8 /* AppDelegate.swift */,
 				4908B3F01B39EC9C0099F0E8 /* ViewController.swift */,
 				4908B3F21B39EC9C0099F0E8 /* Main.storyboard */,
 				4908B3F51B39EC9C0099F0E8 /* Images.xcassets */,
 				4908B3F71B39EC9C0099F0E8 /* LaunchScreen.xib */,
 				4908B3EC1B39EC9C0099F0E8 /* Supporting Files */,
+				4908B4111B3B24300099F0E8 /* PulsingButtonsViewController.swift */,
 			);
 			path = "Pulsing Buttons";
 			sourceTree = "<group>";
@@ -110,6 +132,15 @@
 				4908B4031B39EC9C0099F0E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4908B40E1B39ED540099F0E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4908B40F1B39EF580099F0E8 /* PulsingButtonView.swift */,
+				4908B4131B3B25590099F0E8 /* PulsingButtonBoard.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4908B4101B39EF580099F0E8 /* PulsingButtonView.swift in Sources */,
+				4908B4141B3B25590099F0E8 /* PulsingButtonBoard.swift in Sources */,
+				49007B801B3D711F00A7BE06 /* CGRectExtensions.swift in Sources */,
+				4908B4121B3B24300099F0E8 /* PulsingButtonsViewController.swift in Sources */,
+				49007B7E1B3D6FC900A7BE06 /* UIColorExtensions.swift in Sources */,
 				4908B3F11B39EC9C0099F0E8 /* ViewController.swift in Sources */,
 				4908B3EF1B39EC9C0099F0E8 /* AppDelegate.swift in Sources */,
 			);
@@ -343,6 +379,7 @@
 				INFOPLIST_FILE = "Pulsing Buttons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -353,6 +390,7 @@
 				INFOPLIST_FILE = "Pulsing Buttons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -409,6 +447,7 @@
 				4908B40A1B39EC9C0099F0E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4908B40B1B39EC9C0099F0E8 /* Build configuration list for PBXNativeTarget "Pulsing ButtonsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +456,7 @@
 				4908B40D1B39EC9C0099F0E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
